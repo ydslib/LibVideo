@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ydslib.libvideo.fragment.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_styledPlayerViewTestFragment"
+            app:destination="@id/styledPlayerViewTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/styledPlayerViewTestFragment"
+        android:name="com.ydslib.libvideo.fragment.StyledPlayerViewTestFragment"
+        android:label="StyledPlayerViewTestFragment" >
+        <action
+            android:id="@+id/action_styledPlayerViewTestFragment_to_simpleExoPlayerTestFragment"
+            app:destination="@id/simpleExoPlayerTestFragment" />
+        <action
+            android:id="@+id/action_styledPlayerViewTestFragment_to_progressiveMediaSourceTestFragment"
+            app:destination="@id/progressiveMediaSourceTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/simpleExoPlayerTestFragment"
+        android:name="com.ydslib.libvideo.fragment.SimpleExoPlayerTestFragment"
+        android:label="SimpleExoPlayerTestFragment" />
+    <fragment
+        android:id="@+id/progressiveMediaSourceTestFragment"
+        android:name="com.ydslib.libvideo.fragment.ProgressiveMediaSourceTestFragment"
+        android:label="ProgressiveMediaSourceTestFragment" />
+
+</navigation>
